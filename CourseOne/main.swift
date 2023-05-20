@@ -7,64 +7,73 @@
 
 import Foundation
 
-//1.1 Int, UInt, Float, Double, String
-
-let someNumber = -28
-let somePositiveNumber: UInt = 2000
-let someFloatNumber: Float = 2.56789
-let someDoubleNumber = 57.6755667
-let nameOfMyCat = "Monica"
-
-//1.2
+//1
 
 typealias Quantity = Int
 typealias Name = String
+typealias FloatQuantity = Float
+typealias DoubleQuantity = Double
+typealias YesORNo = Bool
 
 var fruitQuantity = Quantity()
 var fruitNames = Name()
+var fruitWeight = FloatQuantity()
+var fruitDiameter = DoubleQuantity()
+var fruitFreshNotFresh = YesORNo()
 
-fruitQuantity = 50
-fruitNames = "Apples"
+fruitQuantity = 43
+fruitNames = "Apple"
+fruitWeight = 4.6789
+fruitDiameter = 8.57833
+fruitFreshNotFresh = true
 
-fruitQuantity = 34
+fruitQuantity = 76
 fruitNames = "Orange"
+fruitWeight = 11.364
+fruitDiameter = 7.56990
+fruitFreshNotFresh = false
 
-fruitQuantity = 78
-fruitNames = "Peach"
+fruitQuantity = 23
+fruitNames = "Watermelon"
+fruitWeight = 123.789
+fruitDiameter = 43.8903
+fruitFreshNotFresh = true
+
+fruitQuantity = 63
+fruitNames = "Passionfruit"
+fruitWeight = 6.356
+fruitDiameter = 5.3789
+fruitFreshNotFresh = true
+
+fruitQuantity = 18
+fruitNames = "Melon"
+fruitWeight = 35.988
+fruitDiameter = 37.789
+fruitFreshNotFresh = true
 
 
-//1.3
+//2
 
-let numberTwo = Float(4.53)
-let numberInt = 13
-let numberDouble = 2.56
+let numberOne = Float(4.546)
+let numberTwo = 13
+let numberThree = 2.56
 
-let sum = Double(numberInt) * numberDouble
-let sum2 = numberInt * Int(numberDouble)
-let sum3 = Float(numberDouble * Double(numberInt))
+let division = Double(numberTwo) / numberThree
+let multiplication = numberTwo * Int(numberThree)
+let addition = Float(numberThree * Double(numberTwo))
+let substraction = Double(numberOne - Float(numberThree))
 
-let number = 67.889
-let someNumberString = String(number)
+let number = 21456789
+let numberString = String(number)
 
-//1.4
+let numberStringTwo = "67939364"
+let numberFromString = Int(numberString)
 
-let name = "Irina"
-let sureName = "Davydova"
-let patronymic = "Igorevna"
-var age = 34
-var adress = "Parkovaya 1"
-var clothes = ["Jeans", "T-shirt", "Sandals"]
+//3
 
-let name1 = "Nastya"
-let sureName1 = "Sorokina"
-let patronymic1 = "Alekseevna"
-var age1 = 28
-var adress1 = "Volokolamskaya 16"
-var clothes1 = ["Pants", "Sweater", "Sneakers"]
+let result = 44 * 56 / 2
+let resultTwo = 56 + 55 - 34 / 6
+let resultThree = 32 / 27 + 67
+let resultFour = 98 * 52 + 37 % 2 // остаток от деления
+let resultFive = 32 + 23.453 + 28 - 367.678 * 2
 
-let name2 = "Anna"
-let sureName2 = "Sergeeva"
-let patronymic2 = "Vasilevna"
-var age2 = 56
-var adress2 = "Arbatskaya 3"
-var clothes2 = ["Skirt", "T-shirt", "Sandals"]

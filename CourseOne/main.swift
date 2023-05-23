@@ -2,78 +2,105 @@
 //  main.swift
 //  CourseOne
 //
-//  Created by Julia Sushko on 26.04.2023.
+//  Created by Julia Sushko on 23.05.2023
 //
 
 import Foundation
 
 //1
 
-typealias Quantity = Int
-typealias Name = String
-typealias FloatQuantity = Float
-typealias DoubleQuantity = Double
-typealias YesORNo = Bool
-
-var fruitQuantity = Quantity()
-var fruitNames = Name()
-var fruitWeight = FloatQuantity()
-var fruitDiameter = DoubleQuantity()
-var fruitFreshNotFresh = YesORNo()
-
-fruitQuantity = 43
-fruitNames = "Apple"
-fruitWeight = 4.6789
-fruitDiameter = 8.57833
-fruitFreshNotFresh = true
-
-fruitQuantity = 76
-fruitNames = "Orange"
-fruitWeight = 11.364
-fruitDiameter = 7.56990
-fruitFreshNotFresh = false
-
-fruitQuantity = 23
-fruitNames = "Watermelon"
-fruitWeight = 123.789
-fruitDiameter = 43.8903
-fruitFreshNotFresh = true
-
-fruitQuantity = 63
-fruitNames = "Passionfruit"
-fruitWeight = 6.356
-fruitDiameter = 5.3789
-fruitFreshNotFresh = true
-
-fruitQuantity = 18
-fruitNames = "Melon"
-fruitWeight = 35.988
-fruitDiameter = 37.789
-fruitFreshNotFresh = true
-
+let nameOfPlay = "Basketball"
+let descriptionOfTheGame = "Basketball is a sport in which two teams of five players each try to score points on one another by throwing a ball through a hoop (the basket) under organized rules."
+let players = "Bamba Mo, Beasley Malik, Brown, Troy Jr.,     Christie Max, Davis Anthony, Davis Anthony, Hachimura Rui, Harrison Shaquille, James LeBron, Pippen Scotty Jr.,     Reaves Austin, Russell D'Angelo, Schröder Dennis, Swider Cole, Thompson Tristan, Vanderbilt Jarred, Walker Lonnie IV."
+let foundation = "Team was founded in 1947."
+let city = "Los Angeles"
+let adress = "1111 S. Figueroa Street Los Angeles, CA 90015"
 
 //2
 
-let numberOne = Float(4.546)
-let numberTwo = 13
-let numberThree = 2.56
+let numberOne = 43
+let numberTwo = 4.830
+let sumOne = numberTwo + Double(numberOne)
+let otherVariantOfSumOne = numberOne + Int(numberTwo)
 
-let division = Double(numberTwo) / numberThree
-let multiplication = numberTwo * Int(numberThree)
-let addition = Float(numberThree * Double(numberTwo))
-let substraction = Double(numberOne - Float(numberThree))
+let number: UInt16 = 1843
+let secondNumber: UInt8 = 43
+let sumOfNumbers = number + UInt16(secondNumber)
 
-let number = 21456789
-let numberString = String(number)
+let a: Float = 78.4677
+let b = 5.478
+let c = a + Float(b)
+let d = Double(a) + b
 
-let numberStringTwo = "67939364"
-let numberFromString = Int(numberString)
+let stringNumber = "2345"
+let intNumber = 3456
+let stringNumberToInt = Int(stringNumber)
+let intNimberToString = String(intNumber)
 
 //3
 
-let result = 44 * 56 / 2
-let resultTwo = 56 + 55 - 34 / 6
-let resultThree = 32 / 27 + 67
-let resultFour = 98 * 52 + 37 % 2 // остаток от деления
-let resultFive = 32 + 23.453 + 28 - 367.678 * 2
+for phrase in "Hello dear friends" {
+    print(phrase)
+}
+        
+for numbers in 1...100{
+    print(numbers)
+}
 
+for numbers in 1...100{
+    print(numbers * 2)
+}
+
+let names = ["Lisa", "James", "Philipp", "Anna"]
+
+for name in names {
+    print("Hello, \(name)!")
+}
+
+//4
+
+let name = "Yulia"
+let surename = "Kanzler"
+let age = "25"
+let myCity = "Moscow"
+let metroStation = "oktyabrskoe pole"
+let hobbys = "horsriding, fishing, shooting, english learning, travelling"
+let favoriteFilmsGenre = "comedy"
+let occupation = "HR"
+let experience = "5 years"
+let degree = "higher education at State University of management"
+let currentCourses = "english and programming"
+
+//5
+
+let myCV = "Hello, my name is \(name), surename is \(surename). I'm \(age) years old. I live in \(myCity), \(metroStation) metro station. Some of my hobby is \(hobbys). Also I like films, my favorite genre is \(favoriteFilmsGenre). I work as an \(occupation) and have \(experience) experience. I almost have \(degree). Now I do courses - \(currentCourses)."
+
+//6
+
+let firstLine = "the sleepless!"
+let firstLineContinue = "Melancholy"
+let secondLine = "glows tremulously far,"
+let thirdLine = "That show’st the darkness"
+let fourthLine = "to joy remember’d well!"
+let fifthLine = "So gleams the past,"
+let sixthLine = "but warms not with its powerless rays;"
+let seventhLine = "A night-beam Sorrow watcheth"
+let eighthLine = "but oh, how cold!"
+let ninthLine = "George Gordon Byron"
+
+let poem = "\t Sun of \(firstLine) \(firstLineContinue) star!\n Whose tearful beam \(secondLine)\n \(thirdLine) thou canst not dispel,\n How like art thou \(fourthLine)\n \t \(fifthLine) the light of other days,\n Which shines, \(sixthLine)\n \(seventhLine) to behold,\n Distinct, but distant — clear, \(eighthLine)\n \t Author - \(ninthLine)"
+
+print(poem)
+
+//7
+
+let myNameIs = "Y\nu\nl\ni\na"
+
+print(myNameIs)
+
+//8
+
+let numberOfCars = 390
+let phrase = "Number of cars is "
+
+print(phrase + String(numberOfCars))
